@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     function search(topic) {
         var API_KEY = "Bu90UJjNZMWaRTJU3K7PgAmZo7bQG7fb"
-        var url = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=" + API_KEY + "&limit=10";
+        var url = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=" + API_KEY + "&limit=10";
 
         $.ajax({
             url: url,
