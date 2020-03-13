@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     var topic = ""
     //  create actions/commands/buttons for the API to recognize and pull to the html(javascript)
-    var actions = ["dog", "the office", "spongebob", "TeslaModelX", "Bay Bridge", "frenchFries", "mangos", "blueberries", "familyGuy"];
+    var actions = ["dog", "the office", "spongebob", "Bay Bridge", "frenchFries", "mangos", "blueberries", "familyGuy"];
     // display buttons for the gifs
     function displayGifButtons() {
         $("#gifButtonsView").empty();
