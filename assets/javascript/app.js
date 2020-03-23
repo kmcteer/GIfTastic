@@ -36,13 +36,14 @@ $(document).ready(function () {
             for (var i = 0; i < res.data.length; i++) {
                 var gimageview = $("<img>");
                 gimageview.addClass("gifimage");
-                gimageview.attr("src", res.data[i].images.downsized_still.url)
+                gimageview.attr("alturl", res.data[i].images.downsized_still.url)
 
-                gimageview.attr("alturl", res.data[i].images.downsized.url)
+                gimageview.attr("src", res.data[i].images.downsized.url)
                 $("#gifButtonsView").append(gimageview);
             }
             $(".gifimage").on("click", function () {
                 //topic = $(this).attr("data-name")
+                console.log("this click:", this)
                 console.log("image clicked:", this)
 
                 // switch the images 
